@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <link rel="stylesheet" href="styles.css">
+  <<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1>SPLI</h1>
+    <h1>TTER</h1>
+  </header>
+  <main>
+      <h2>Bill</h2>
+      <input type="number" id="bill" placeholder="0" />
+      <span class="currency">$</span>
+  </main>
+  <section class="tip-section">    
+      <h2>Select Tip%</h2> 
+        <button class="tip-button" data-tip="5">5%</button>
+        <button class="tip-button" data-tip="10">10%</button>
+        <button class="tip-button" data-tip="15">15%</button>
+        <button class="tip-button" data-tip="25">25%</button>
+        <button class="tip-button" data-tip="50">50%</button>
+        <input type="number" id="custom-tip" placeholder="Custom" />
+  </section>
+
+  <h2>Number of People</h2>
+  <input type="number" id="people" placeholder="1" />
+
+  <h2>Tip Amount</h2>
+  <p id="tip-amount">/ person</p>
+
+  <h2>Total</h2>
+  <p id="total-amount">/ person</p>
+
+  <button id="reset-button">Reset</button>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
