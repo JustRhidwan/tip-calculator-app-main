@@ -11,14 +11,38 @@
 }
 body {
   font-family: "Space Mono", monospace;
-  background-color: hsl(185, 41%, 84%);
-  color: hsl(183, 100%, 15%);
-  margin: 0;
+   background-color: hsl(185, 41%, 84%);
+  font-size: 24px;
+   margin: 0 auto;   
+    min-height: 100vh;
+    max-height: 100vh;
 }
-.header {
-  text-align: center;
+header {
+ 
+}
+.container {
   padding: 20px;
-  background-color: hsl(185, 41%, 84%);
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 15px;
+}
+h2{
+  font-size: 1.2rem;
+  color: hsl(186, 14%, 43%);
+}
+.bill {
+  border: 2px solid red;
+  height: 50px;
+  background-color:hsl(186, 14%, 43%) ;
+}
+.tip-button {
+  background-color: hsl(183, 100%, 15%);
+  padding: 10px 35px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #fff;
 }
 
 
