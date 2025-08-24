@@ -23,29 +23,33 @@
   <div class="container">
   <main>
       <h2>Bill</h2>
-      <input type="number" id="bill" placeholder="0" />
+      <input type="number" id="bill" placeholder="$" />
       <span class="currency">$</span>
   </main>
   <section class="tip-section">    
       <h2>Select Tip%</h2> 
+      <div class="tip-btns"> 
         <button class="tip-button" data-tip="5">5%</button>
         <button class="tip-button" data-tip="10">10%</button>
         <button class="tip-button" data-tip="15">15%</button>
         <button class="tip-button" data-tip="25">25%</button>
         <button class="tip-button" data-tip="50">50%</button>
         <input type="number" id="custom-tip" placeholder="Custom" />
-  </section>
+      </div>
+   </section>
 
   <h2>Number of People</h2>
   <input type="number" id="people" placeholder="1" />
+   <div class="total">
+      <h2>Tip Amount</h2>
+      <p>/ person</p>
 
-  <h2>Tip Amount</h2>
-  <p id="tip-amount">/ person</p>
+      <h2>Total</h2>
+      <p>/ person</p>
 
-  <h2>Total</h2>
-  <p id="total-amount">/ person</p>
-
-  <button id="reset-button">Reset</button>
+      <button id="reset-button">RESET</button>
+   </div>
+      
   </div>
 
 
