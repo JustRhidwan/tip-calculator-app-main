@@ -17,6 +17,7 @@ body {
     min-height: 100vh;
     max-height: 100vh;
     max-width: 375px;
+    overflow: hidden;
 }
 header {
   text-align: center;
@@ -26,6 +27,9 @@ header {
 }
 h1 {
   margin: 5px;
+}
+main {
+  position: relative;
 }
 .container {
   padding: 20px;
@@ -46,6 +50,7 @@ h2{
   color: hsl(183, 100%, 15%);
   font-size: 1.5rem;
   font-weight: 700;
+  text-align: right;
 }
 .tip-btns {
   display: grid;
@@ -60,19 +65,28 @@ h2{
   font-size: 1.5rem;
   font-weight: 400;
   color: #fff;
+  width: 160px;
 }
 #custom-tip {
   background-color:hsl(189, 47%, 97%) ;
   border: none;
   border-radius: 5px;
    color: hsl(183, 100%, 15%);
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 400;
   padding: 10px 35px;
   width: 160px;
   box-sizing: border-box;
 }
-
+.sub-section {
+  margin-top: 30px;
+  position: relative;
+}
+#icon-person, #icon-dollar {
+  position: absolute;
+  top: 60%;
+  left: 6%;
+}
 .total {
     margin-top: 20px;
     background-color: hsl(183, 100%, 15%);
@@ -103,6 +117,46 @@ p {
   font-size: 1.2rem;
   font-weight: 700;
 }
+button:hover {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+}
 
 .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+
+    @media (min-width: 835px) {
+      body {
+        margin: 0 auto;
+        max-width: 758px;
+      }
+      .container {
+        display: flex;
+        box-sizing: border-box;
+        width: 940px;
+        gap: 10px;
+      }
+      .tip-btns {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 3px;
+      }
+      .tip-button {
+        width: 130px;
+      }
+      #custom-tip {
+        width: 130px;
+      }
+      .left {
+        padding: 10px;
+        width: 50%;
+      }
+      .right {
+        width: 50%;
+        padding: 10px;
+      
+      }
+      .total-amt {
+        margin-bottom: 120px;
+      }
+    }

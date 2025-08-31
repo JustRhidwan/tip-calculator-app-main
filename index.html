@@ -21,35 +21,49 @@
   </header>
   
   <div class="container">
-  <main>
-      <h2>Bill</h2>
-      <input type="number" id="bill" placeholder="$" />
-      <span class="currency">$</span>
-  </main>
-  <section class="tip-section">    
-      <h2>Select Tip%</h2> 
-      <div class="tip-btns"> 
-        <button class="tip-button" data-tip="5">5%</button>
-        <button class="tip-button" data-tip="10">10%</button>
-        <button class="tip-button" data-tip="15">15%</button>
-        <button class="tip-button" data-tip="25">25%</button>
-        <button class="tip-button" data-tip="50">50%</button>
-        <input type="number" id="custom-tip" placeholder="Custom" />
-      </div>
-   </section>
+    <div class="left">
+       <main>
+            <h2>Bill</h2>
+            <img src="./images/icon-dollar.svg" id="icon-dollar" alt="$">
+            <input type="number" id="bill" />   
+        </main>
+        <section class="tip-section">    
+            <h2>Select Tip%</h2> 
+            <div class="tip-btns"> 
+              <button class="tip-button" id="tip-5">5%</button>
+              <button class="tip-button" id="tip-10">10%</button>
+              <button class="tip-button" id="tip-15">15%</button>
+              <button class="tip-button" id="tip-25">25%</button>
+              <button class="tip-button" id="tip-50">50%</button>
+              <input type="number" id="custom-tip" placeholder="Custom" />
+            </div>
+        </section>
+        <div class="sub-section">
+          <h2>Number of People</h2>
+            <img src="./images/icon-person.svg" id="icon-person" alt="people"  >
+        <input type="number" id="people" placeholder="1" />
+        </div>
+    </div>
+       
+        
+     <div class="right">
+        <div class="total">
+          <div class="tip-amt">
+             <h2>Tip Amount</h2>
+            <p>/ person</p>
+            <p id="tip-amount"> </p>
+          </div>
+          <div class="total-amt">
+            <h2>Total</h2>
+            <p>/ person</p>
+            <p id="total"> </p>
+          </div>
 
-  <h2>Number of People</h2>
-  <input type="number" id="people" placeholder="1" />
-   <div class="total">
-      <h2>Tip Amount</h2>
-      <p>/ person</p>
-
-      <h2>Total</h2>
-      <p>/ person</p>
-
-      <button id="reset-button">RESET</button>
-   </div>
-      
+            <button id="reset-button">RESET</button>
+        </div>
+     </div>   
+        
+            
   </div>
 
 
