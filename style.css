@@ -87,7 +87,7 @@ h2{
   top: 60%;
   left: 6%;
 }
-.total {
+.total-section {
     margin-top: 20px;
     background-color: hsl(183, 100%, 15%);
     border: none;
@@ -98,7 +98,18 @@ h2{
       padding: 20px;
       box-sizing: border-box;
 }
-.total h2 {
+.up {
+  display: flex;
+  justify-content: space-between;
+}
+.total-right > p {
+  font-size: 2.5rem;
+  color: hsl(172, 67%, 45%);
+  font-weight: 700;
+  margin-top: 0;
+
+}
+.total-section h2 {
   color: white;
 }
 p {
@@ -127,7 +138,7 @@ button:hover {
 
     @media (min-width: 835px) {
       body {
-        margin: 0 auto;
+        margin: 100px auto;
         max-width: 758px;
       }
       .container {
