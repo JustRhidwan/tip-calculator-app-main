@@ -149,7 +149,8 @@ margin: 20px 0;}
     .attribution a { color: hsl(228, 45%, 44%); }
 
     @media (min-width: 835px) {
-      body {
+      body {max-height: 100vh;
+
         margin: 100px auto;
         max-width: 758px;
       }
