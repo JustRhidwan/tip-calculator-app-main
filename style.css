@@ -14,10 +14,9 @@ body {
    background-color: hsl(185, 41%, 84%);
   font-size: 24px;
    margin: 0 auto;   
-    min-height: 100vh;
     max-height: 100vh;
     max-width: 375px;
-    overflow: hidden;
+  
 }
 header {
   text-align: center;
@@ -51,6 +50,18 @@ h2{
   font-size: 1.5rem;
   font-weight: 700;
   text-align: right;
+}
+#bill:focus, #people:focus, #custom-tip:focus {
+  outline: 2px solid hsl(172, 67%, 45%);
+}
+.error-message {
+  position: absolute;
+  top: 10%;
+  left: 65%;
+  color: red;
+  font-size: .9rem;
+  margin-bottom: 1px;
+  
 }
 .tip-btns {
   display: grid;
@@ -133,7 +144,8 @@ button:hover {
   color: hsl(183, 100%, 15%);
 }
 
-.attribution { font-size: 11px; text-align: center; }
+.attribution { font-size: 11px; text-align: center;
+margin: 20px 0;}
     .attribution a { color: hsl(228, 45%, 44%); }
 
     @media (min-width: 835px) {
@@ -147,6 +159,18 @@ button:hover {
         width: 940px;
         gap: 10px;
       }
+      .error-message {
+        position: absolute;
+        top: 10%;
+        left: 65%;
+        color: red;
+        font-size: 1rem;
+        margin-bottom: 1px;
+      }
+  
+  .input-error {
+    border: 2px solid red;
+  }
       .tip-btns {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
